@@ -1,0 +1,27 @@
+
+
+
+<div class="topics">
+  <table class="rwd-table">
+          <tr>
+          	<th></th>
+            <th>ratings</th>
+            <th>Title</th>
+            <th>Writer</th>
+            <th></th>
+          </tr>
+
+  <% for(var i=0; i<topics.length; i++) {%>
+    
+          <tr>
+          	<td><a class="mybtn" href="/topic/upvote/<%= topics[i].id %>">upvote</a></td>
+          	<td> +<%= topics[i].upvotes %> </td>
+            <td><a class="mybtn" href="/topic/<%= topics[i].id %>"><%= topics[i].title %></a></td>
+            <td><%= topics[i].op %></td>
+            <td><a class="mybtn" href="/topic/comment/<%= topics[i].id %>">comment</a></td>
+          </tr>
+        
+  <% } %>
+
+  </table>
+</div>

@@ -1,0 +1,18 @@
+
+<div class="col-md-4 center">
+
+
+<h1 class="text-center">Login In using Facebook</h1>
+
+
+	<% if (user) { %>
+	<h1 class="text-center">Your account <%= user.username  %> is already logged in! </h1>
+	<a class="btn btn-primary btn-lg" href="/logout">Log out</a>
+<% }else{%>
+	<a class="btn btn-primary btn-lg " href="/login">Log in</a>
+<% }%>
+
+
+
+
+</div>
